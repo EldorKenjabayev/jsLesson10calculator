@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калкульлятор
+    </title>
+    <link rel="stylesheet" href="./style/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,600&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body  onkeyup="keyDown(event)">
+    <div class="calculator">
+        <div class="calculator_display">
+            <div class="calculator_history">
+            0
+            </div>
+            <div class="calculator_total">
+            </div>
+        </div>
+        <div class="calculator_actions">
+            <div class="calculator_row">
+                <div class="calculator_col calculator_color_red " data-type="c">C</div>
+                <div class="calculator_col calculator_color" data-type="percent">%</div>
+                <div class="calculator_col calculator_color" data-type="Backspace"><i class='bx bxs-tag-x'></i></div>
+                <div class="calculator_col calculator_color" data-type="/">/</div>
+            </div>
+            <div class="calculator_row">
+                <div class="calculator_col" data-type='7'>7</div>
+                <div class="calculator_col" data-type='8'>8</div>
+                <div class="calculator_col" data-type='9'>9</div>
+                <div class="calculator_col calculator_color" data-type="*">*</div>
+            </div>
+            <div class="calculator_row">
+                <div class="calculator_col" data-type='4'>4</div>
+                <div class="calculator_col" data-type='5'>5</div>
+                <div class="calculator_col" data-type='6'>6</div>
+                <div class="calculator_col calculator_color" data-type="-">-</div>
+            </div>
+            <div class="calculator_row">
+                <div class="calculator_col" data-type='1'>1</div>
+                <div class="calculator_col" data-type='2'>2</div>
+                <div class="calculator_col" data-type='3'>3</div>
+                <div class="calculator_col calculator_color" data-type="+">+</div>
+            </div>
+            <div class="calculator_row">
+                <div class="calculator_col" data-type="float">.</div>
+                <div class="calculator_col" data-type='0'>0</div>
+                <div class="calculator_col calculator_color" data-type="history"><i class='bx bx-history'></i></div>
+                <div class="calculator_col calculator_color" data-type="Enter"  data-type="=">=</div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
